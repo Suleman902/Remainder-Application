@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background:lightpink;
+        }
+        .reminder-box {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        select, input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        div
+        {
+            background-color:lightgrey;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reminder-box" ba>
+    <h2>Set Your Daily Reminders</h2>
+    <label for="day">Select Day:</label>
+    <select id="day">
+        <option value="Select"></option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+
+    <label for="time">Select Time:</label>
+    <input type="time" id="time">
+
+    <label for="activity">Select Activity:</label>
+    <select id="activity">
+        <option value="Select"></option>
+        <option value="Wake up">Wake up</option>
+        <option value="Go to gym">Go to gym</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Meetings">Meetings</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Quick nap">Quick nap</option>
+        <option value="Go to library">Go to library</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Go to sleep">Go to sleep</option>
+    </select>
+
+    <button id="setReminder">Set Reminder</button>
+</div>
+
+<audio id="chime" src="Remain.mp3" preload="auto" loop></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
